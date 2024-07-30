@@ -1,0 +1,214 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background: linear-gradient(to right, #ff6f61, #de1f4d);
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.3s;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: width 0.3s, left 0.3s;
+    transform: translateX(-50%);
+  }
+  
+  nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  /* Recommendation sections */
+  h2 {
+    font-size: 2.5em;
+    color: #ff6f61;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+  }
+  
+  h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #ff6f61;
+    margin: 20px auto 0;
+    border-radius: 2px;
+  }
+  
+  .recommendation {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .recommendation img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .recommendation:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .recommendation:hover img {
+    transform: scale(1.05);
+  }
+  
+  .recommendation h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .recommendation p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  /* Form styles */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1.1em;
+  }
+  
+  form input, form textarea {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  form input[type="submit"] {
+    background: #ff6f61;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+    background: #de1f4d;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .section {
+      padding: 60px 20px;
+    }
+  }
+  

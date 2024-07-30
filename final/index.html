@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Recommendations</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#" data-section="home">Home</a></li>
+      <li><a href="#" data-section="about">About Us</a></li>
+      <li><a href="#" data-section="contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Page Content -->
+  <section id="home" class="section">
+    <header>
+      <h1>Welcome to Our Travel Recommendation Website</h1>
+      <p>Discover the best beaches and temples around the world, and find the perfect destination for your next adventure.</p>
+    </header>
+
+    <h2>Beach Recommendations</h2>
+    <div class="recommendation">
+      <h3>Beach 1</h3>
+      <img src="download (1).jpeg" alt="Beach 1">
+      <p>Description of Beach 1.</p>
+    </div>
+    <div class="recommendation">
+      <h3>Beach 2</h3>
+      <img src="th.jpeg" alt="Beach 2">
+      <p>Description of Beach 2.</p>
+    </div>
+
+    <h2>Temple Recommendations</h2>
+    <div class="recommendation">
+      <h3>Temple 1</h3>
+      <img src="OIP.jpeg" alt="Temple 1">
+      <p>Description of Temple 1.</p>
+    </div>
+    <div class="recommendation">
+      <h3>Temple 2</h3>
+      <img src="download (2).jpeg" alt="Temple 2">
+      <p>Description of Temple 2.</p>
+    </div>
+
+    <h2>Recommendations by Country</h2>
+    <div class="recommendation">
+      <h3>Country 1</h3>
+      <img src="OIP (1).jpeg" alt="Country 1">
+      <p>Description of Country 1.</p>
+    </div>
+    <div class="recommendation">
+      <h3>Country 2</h3>
+      <img src="download (3).jpeg" alt="Country 2">
+      <p>Description of Country 2.</p>
+    </div>
+  </section>
+
+  <!-- About Us Page Content -->
+  <section id="about" class="section" style="display: none;">
+    <h1>About Us</h1>
+    <p>We are passionate travelers who love to explore and share our experiences. Our mission is to help you find the best destinations for your trips.</p>
+  </section>
+
+  <!-- Contact Us Page Content -->
+  <section id="contact" class="section" style="display: none;">
+    <h1>Contact Us</h1>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+</body>
+</html>
